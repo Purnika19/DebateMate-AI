@@ -1,5 +1,5 @@
 const API_URL = "http://127.0.0.eval:8000"; // Assuming local runner backend defaults to this. We'll set dynamically
-const BASE_API_URL = "http://127.0.0.1:8000";
+const BASE_API_URL = "https://debatemate-api.onrender.com";
 
 const domElements = {
     homeScreen: document.getElementById('home-screen'),
