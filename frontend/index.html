@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DebateMate AI : Your AI Debate Partner</title>
+    <!-- Modern Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- HEADER -->
+        <header class="navbar">
+            <div class="logo" id="home-logo" style="cursor: pointer;">
+                <div class="logo-icon" style="font-size: 11px; font-weight: 800; letter-spacing: -0.5px;">DM</div> DebateMate<span style="color: #6366f1;">.</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="nav-link active" data-target="home-screen">Home <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                <a href="#" class="nav-link" data-target="about-screen">About <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                <a href="#" class="nav-link" data-target="setup-screen">Start Debate</a>
+                <a href="#" class="nav-link" data-target="history-screen">History</a>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div id="timer-display" class="timer hidden">00:00</div>
+                <a href="mailto:purnikamalhotra53@gmail.com" class="btn-nav-action" style="text-decoration: none;">Contact us &rightarrow;</a>
+            </div>
+        </header>
+
+        <main class="container">
+            <!-- HOME SCREEN -->
+            <section id="home-screen" class="screen active fade-in">
+                <div class="hero-grid">
+                    <div class="pixel-deco" style="top: -10px; left: -10px;">
+                        <div class="pixel"></div><div class="pixel empty"></div><div class="pixel"></div>
+                        <div class="pixel"></div><div class="pixel"></div><div class="pixel empty"></div>
+                        <div class="pixel empty"></div><div class="pixel"></div><div class="pixel"></div>
+                    </div>
+                    
+                    <div class="hero-content">
+                        <h2 class="hero-title">Debate better,<br>together<br>with DebateMate.</h2>
+                        <p class="hero-subtitle">DebateMate is a cheerful, no-nonsense AI sparring partner for fast-growing debaters and critical thinkers.</p>
+                        <div>
+                            <button id="hero-start-btn" class="btn-primary" style="padding: 1rem 1.8rem;">Get Started &rightarrow;</button>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="pixel-deco" style="top: 20px; left: -20px;">
+                            <div class="pixel" style="background: rgba(250, 232, 212, 1)"></div><div class="pixel empty"></div><div class="pixel" style="background: rgba(250, 232, 212, 1)"></div>
+                            <div class="pixel empty"></div><div class="pixel" style="background: rgba(250, 232, 212, 1)"></div><div class="pixel" style="background: rgba(250, 232, 212, 1)"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-text" style="margin-top: 6rem; margin-bottom: 4rem;">
+                    <h2>Stand out of the crowd with<br>best communication skills.</h2>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card mint">
+                        <div style="font-size: 2.2rem; margin-bottom: 2rem;">⬢</div>
+                        <h3>Argument Communication</h3>
+                        <p>We help you develop your logical identity and create a cross-platform debating strategy.</p>
+                        <a href="#" class="learn-more">Learn More &rightarrow;</a>
+                        <div class="pixel-deco" style="bottom: 10px; right: 10px; justify-content: flex-end;">
+                            <div class="pixel"></div><div class="pixel empty"></div><div class="pixel"></div>
+                            <div class="pixel empty"></div><div class="pixel"></div><div class="pixel"></div>
+                        </div>
+                    </div>
+                    <div class="feature-card peach">
+                        <div style="font-size: 2.2rem; margin-bottom: 2rem;">✿</div>
+                        <h3>Logic Planning</h3>
+                        <p>We help you figure out where and how to spend your speaking time to make the most of it.</p>
+                         <a href="#" class="learn-more">Learn More &rightarrow;</a>
+                         <div class="pixel-deco" style="top: 10px; right: 10px; justify-content: flex-end;">
+                            <div class="pixel"></div><div class="pixel empty"></div><div class="pixel"></div>
+                            <div class="pixel empty"></div><div class="pixel"></div><div class="pixel"></div>
+                        </div>
+                    </div>
+                    <div class="feature-card blue">
+                        <div style="font-size: 2.2rem; margin-bottom: 2rem;">◓</div>
+                        <h3>Feedback Management</h3>
+                        <p>We track what your opponents are saying about you and help you manage your responses.</p>
+                         <a href="#" class="learn-more">Learn More &rightarrow;</a>
+                         <div class="pixel-deco" style="bottom: 10px; right: 10px; justify-content: flex-end;">
+                            <div class="pixel"></div><div class="pixel empty"></div><div class="pixel"></div>
+                            <div class="pixel empty"></div><div class="pixel"></div><div class="pixel"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT SCREEN -->
+            <section id="about-screen" class="screen hidden fade-in" style="padding: 0;">
+                <div class="about-hero">
+                    <div class="about-hero-content">
+                        <h2>About us</h2>
+                        <p>At DebateMate, we understand the importance of critical thinking. A fresh perspective improves the quality of your arguments. Internal reflection brings depth and style into your everyday communication. If you're thinking about improving your logical reasoning, a great debate partner can make all the difference.</p>
+                    </div>
+                    <div class="torn-edge"></div>
+                </div>
+
+                <div class="about-vision-section">
+                    <div class="vision-images">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Debate Strategy">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Team Discussion">
+                    </div>
+                    <div class="vision-text">
+                        <h2>Our Vision</h2>
+                        <p>At DebateMate, we understand the importance of effective communication. A fresh logic framework improves the appeal of your arguments. An internal restructuring brings beauty and style into your everyday analysis. If you're thinking about refining your responses, a great debate partner can make all the difference.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SETUP SCREEN -->
+            <section id="setup-screen" class="screen hidden fade-in">
+                <div class="setup-box">
+                    <div class="header-text" style="margin-bottom: 2rem;">
+                        <h2>Configure Your Debate</h2>
+                        <p style="color: var(--text-secondary);">Select a topic and duration to get started.</p>
+                    </div>
+                    
+                    <form id="setup-form">
+                        <div class="form-group">
+                            <label for="topic-input">Debate Topic</label>
+                            <input type="text" id="topic-input" placeholder="e.g., AI will replace human jobs..." required>
+                        </div>
+
+                        <div class="form-group borderless">
+                            <label>Debate Duration</label>
+                            <div class="duration-options">
+                                <label class="radio-card">
+                                    <input type="radio" name="duration" value="3" checked>
+                                    <span class="card-content">
+                                        <span class="val">3</span>
+                                        <span class="unit">Mins</span>
+                                    </span>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="duration" value="5">
+                                    <span class="card-content">
+                                        <span class="val">5</span>
+                                        <span class="unit">Mins</span>
+                                    </span>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="duration" value="10">
+                                    <span class="card-content">
+                                        <span class="val">10</span>
+                                        <span class="unit">Mins</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%; border-radius: 999px;">Start Debate Session &rightarrow;</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- DEBATE SCREEN -->
+            <section id="debate-screen" class="screen hidden">
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 0.8rem;">
+                    <button type="button" id="end-early-btn" class="btn-primary danger-outline" style="width: auto; padding: 0.5rem 1rem; font-size: 0.85rem;">🛑 End Early</button>
+                </div>
+                <div class="chat-container">
+                    <div id="chat-messages" class="messages-area">
+                        <!-- Messages will be injected here -->
+                    </div>
+                </div>
+
+                <div class="input-area">
+                    <div id="recording-status" class="recording-status hidden">
+                        <span class="recording-dot"></span>
+                        <span id="recording-time">00:00</span>
+                    </div>
+                    <form id="chat-form">
+                        <textarea id="message-input" placeholder="Type your argument here..." rows="1" required></textarea>
+                        <button type="button" id="mic-btn" class="btn-icon outline" aria-label="Microphone">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                        </button>
+                        <button type="submit" id="send-btn" class="btn-icon" aria-label="Send Message">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- REPORT SCREEN -->
+            <section id="report-screen" class="screen hidden fade-in">
+                <div class="header-text center-align">
+                    <h2>Debate Concluded</h2>
+                    <p style="color: var(--text-secondary);">Here is your overall performance and evaluation summary.</p>
+                </div>
+                
+                <div id="report-content" class="report-content layout-content">
+                    <div class="loader-container"><div class="spinner"></div> Generating Comprehensive Report...</div>
+                </div>
+
+                <div class="center-align" style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center;">
+                    <button id="download-pdf-btn" class="btn-primary outline">Download PDF</button>
+                    <button id="restart-btn" class="btn-primary">Start New Debate</button>
+                </div>
+            </section>
+
+            <!-- HISTORY SCREEN -->
+            <section id="history-screen" class="screen hidden fade-in">
+                <div class="header-text">
+                    <h2>Debate History</h2>
+                    <p style="color: var(--text-secondary);">Your past performance records.</p>
+                </div>
+                <div id="history-list" class="layout-content history-list">
+                    <!-- History items will be injected here -->
+                </div>
+            </section>
+        </main>
+
+        <footer style="text-align: center; padding: 2rem; color: var(--text-secondary); font-size: 0.95rem; margin-top: auto; border-top: 1px solid #eee;">
+            Made by Purnika Malhotra
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
