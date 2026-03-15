@@ -5,7 +5,7 @@ DebateMate AI is an AI-powered debate simulator where users can practice argumen
 Instead of static learning, users engage in interactive debates with AI, receive logical feedback, and improve their reasoning skills through structured argument evaluation.
 
 # Live Demo  
-https://debate-mate-ai.netlify.app/
+Check it out at : https://debate-mate-ai.netlify.app/
 
 ---
 
@@ -14,7 +14,7 @@ https://debate-mate-ai.netlify.app/
 ##  AI Counterarguments
 The AI automatically takes the opposite stance and generates logical counterarguments.
 
-##⏱ Timed Debate Sessions
+## Timed Debate Sessions
 Users can select debate duration:
 - 3 minutes
 - 5 minutes
