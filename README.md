@@ -7,14 +7,14 @@ Instead of static learning, users engage in interactive debates with AI, receive
 # Live Demo  
 Check it out at : https://debate-mate-ai.netlify.app/
 
----
+
 
 #  Features
 
-##  AI Counterarguments
+##  1. AI Counterarguments
 The AI automatically takes the opposite stance and generates logical counterarguments.
 
-## Timed Debate Sessions
+## 2. Timed Debate Sessions
 Users can select debate duration:
 - 3 minutes
 - 5 minutes
@@ -22,20 +22,20 @@ Users can select debate duration:
 
 The debate ends automatically when the timer expires.
 
-##  Voice Input Support
+##  3. Voice Input Support
 Users can speak their arguments using the browser microphone via the Web Speech API.
 
-##  Argument Evaluation
+##  4. Argument Evaluation
 After the debate, AI evaluates arguments based on:
 - Logical reasoning
 - Clarity
 - Supporting evidence
 - Persuasiveness
 
-##  Debate Reports
+##  5. Debate Reports
 Each debate session generates a performance report highlighting strengths and areas for improvement.
 
-##  Debate History
+##  6. Debate History
 All past debate reports are stored locally using the browser Local Storage API.
 
 ---
@@ -44,18 +44,18 @@ All past debate reports are stored locally using the browser Local Storage API.
 
 The application follows a client-server architecture.
 
-Frontend (Netlify)
+## Frontend (Netlify)
 HTML5 + CSS3 + Vanilla JavaScript  
 Web Speech API  
 Local Storage API  
 
-Backend (Render)
+## Backend (Render)
 Python  
 FastAPI  
 Pydantic  
 Async Processing  
 
-AI Layer
+## AI Layer
 Groq API  
 Llama-3.3-70B Model  
 
